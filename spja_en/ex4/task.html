@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>SPJA Atoms</title>
+   <meta charset="UTF-8">
+  </head>
+ <body>
+
+ <h2>SPJA Atoms</h2>
+
+ <ul>
+  <li>Work with the file atoms.py. The file playground.py contains functions for drawing and DO NOT change it.
+  <li>Currently, the atom is represented as a triplet of values in a tuple (position_x, position_y, radius). The triplets are returned in the function tick(). The number of triplets corresponds to the number of atoms.
+ <h3>1. (1.5 p)</h3>
+ <ul>
+ <li>Create a class Atom with a constructor with 3 parameters: positions x, y, and radius. Save these parameters in the instance variables.
+ <li>In the class Atom, create a method to_tuple(). This method return the tuple (x, y, radius) as it is required in the method tick().
+ <li>In the constructor of the ExampleWorld class, create several instances of the class Atom. In the method tick(), create a list of triplets by calling the method to_tuple() to each atom.
+ </ul>   
+ <h3>2. (1 p)</h3>
+ <ul>
+  <li>Pass the number of atoms in the constructor of the class ExampleWorld. 
+  <li>Randomly generate the position and the radius (use width and height of the drawing area). You can use the function randint from the package random.
+ </ul>
+<h3>3. (1.5 p)</h3>
+ <ul>
+  <li>Let's move with the atoms. In the class Atom, create a method move(), in which add a value representing the velocity to the position of atom (for both directions).
+  <li>Pass the velocity in x and y direction in the constructor of the class Atom and call the method move() in the tick() method.
+ </ul>     
+<h3>4. (1 p)</h3>
+ <ul>
+  <li>In the move() method, check whether the atom is beyond the border of drawing area. If so, change its direction.
+  </ul>
+ </body>
+ </html>

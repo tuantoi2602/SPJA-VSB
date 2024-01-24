@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<playground>
+    <world sizeX="500" sizeY="500"/>
+    <atom type="FallDown">
+        <color>#ffffff</color>
+        <position>50,50</position>
+        <radius>20</radius>
+        <velocity>2,3</velocity>
+    </atom>
+    <atom type="FallDown">
+        <color>#12ff12</color>
+        <position>700,30</position>
+        <radius>23</radius>
+        <velocity>-5,5</velocity>
+    </atom>
+    <atom type="Normal">
+        <color>#881155</color>
+        <position>250,100</position>
+        <radius>15</radius>
+        <velocity>4,7</velocity>
+    </atom>
+    <atom type="Normal">
+        <color>#1100ff</color>
+        <position>30,30</position>
+        <radius>25</radius>
+        <velocity>5,-12</velocity>
+    </atom>
+</playground>

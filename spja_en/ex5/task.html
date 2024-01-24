@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>SPJA Atoms Ex6</title>
+   <meta charset="UTF-8">
+  </head>
+ <body>
+
+ <h2>SPJA Exercise 6</h2>
+
+ <ul>
+  <li>Continue with the file atoms.py from the last exercise, use only the new version of playground.py. The method tick(), located in atoms.py, is called iteratively several times per second.
+This method now expects the size of drawing area (size_x and size_y). The atoms is now represented by four values: position x, position y, radius and color.
+ <h3>1. (1 p)</h3>
+ <ul>
+ <li>Change the constructor of Atom such that you pass position x, position y, radius and color. Edit the method to_tuple(), that will return these four values. Edit the method tick() such that you pass two parameters: size x and size y.
+For setting the color, use <b>playground.Colors.BLUE.value</b> (for blue color).
+ </ul>   
+ <h3>2. (2 p)</h3>
+ <ul>
+  <li> Create a class FallDownAtom that inherits from the class Atom. This class will contain two class variables (not instance variables): <b>g</b> and <b>damping</b> (for example, with the values 3.0 and 0.8).
+The class FallDownAtom inherits the method move. Change this method such that the atoms will be affected by gravity.
+It is done by adding the value of <b>g</b> to the verical speed of atom.
+When the atom hits the ground, its speed will be reduced in both vertical and horizontal speeds (<b>speed * damping</b>).
+ </ul>
+<h3>3. (1 p)</h3>
+ <ul>
+  <li>Check the atoms so that they will not leave the drawing area (the size of drawing area may be changed).
+ </ul>     
+<h3>4. (1 p)</h3>
+ <ul>
+  <li>Create a method random_atom() in the class ExampleWorld. This method creates instances of class Atom and FallDownAtom with a random speed, size and color. For the color, use the class playground.Colors and the method random.choice (change the type of Colors to list).
+  </ul>
+ </body>
+ </html>
